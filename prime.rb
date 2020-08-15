@@ -46,3 +46,4 @@ def prime?(integer)
 
 
 puts prime?(3)
+puts prime?(4)

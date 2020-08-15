@@ -24,7 +24,7 @@ def prime?(integer)
       #we dont actually need what find delivers. we just want find to find something. finding something is a signal already
     end
 
-    if smallprimes.include(integer)
+    if smallprimes.include?(integer)
       true
 
     else

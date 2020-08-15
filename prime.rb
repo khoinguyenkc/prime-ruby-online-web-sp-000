@@ -8,7 +8,7 @@ def prime?(integer)
 
     result = smallprimes.find do |primenumber|
       (integer % primenumber == 0)
-      #will return to result the first number divisible
+      #will return to result the first number divisible. otherwise nil
     end
 
     if integer == result
@@ -27,7 +27,8 @@ def prime?(integer)
 
     if integer == result
       true
-
+    elsif result != nil #when it's not the same number as integer but it is a number
+      false
     else
 
       xnumber = (1231..integer).to_a.find do |primenumber|
@@ -41,9 +42,9 @@ def prime?(integer)
         false
       end
 
-    end 
+    end
   end #end of this huge if flow
-
+end
 
 puts prime?(3)
 puts prime?(4)

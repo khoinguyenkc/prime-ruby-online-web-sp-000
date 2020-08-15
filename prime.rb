@@ -51,3 +51,4 @@ puts prime?(4)
 puts prime?(1231)
 puts prime?(1259)
 puts prime?(1763)
+#this was a serious ass whooping

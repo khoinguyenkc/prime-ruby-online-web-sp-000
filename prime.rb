@@ -8,10 +8,10 @@ def prime?(integer)
 
     result = smallprimes.find do |primenumber|
       (integer % primenumber == 0)
-      #we dont actually need what find delivers. we just want find to find something. finding something is a signal already
+      #will return to result the first number divisible
     end
 
-    if smallprimes.include(integer)
+    if integer == result
       true
     else
       false
@@ -25,7 +25,7 @@ def prime?(integer)
     end
     end
 
-    if integer == number
+    if integer == result
       true
 
     else

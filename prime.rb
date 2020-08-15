@@ -23,7 +23,7 @@ def prime?(integer)
       (integer % primenumber == 0)
       #will return to result the first number divisible
     end
-    end
+    
 
     if integer == result
       true
